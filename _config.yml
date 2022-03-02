@@ -16,9 +16,9 @@ author: Sam Della-Santina
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Tesla Coil Calculator: "http://www.tesla.nu/programs/javatc/javatc.html"
+    - Franzolielectronics: "https://franzolielectronics.com/alpha-dr-mark-ii/"
+  Author's home: "http://av8rsam.com/"
 
 # --- Logo --- #
 
@@ -103,7 +103,7 @@ post_search: true
 navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
+page-col: "#24262b"
 text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"

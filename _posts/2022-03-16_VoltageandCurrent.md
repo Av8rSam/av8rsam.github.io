@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Voltage, Current and Ohm's Law
+date: "2022-03-25"
 subtitle: Explaining Relationship between Voltage and current across a resistance
 gh-repo: Av8rSam/av8rsam.github.io
 gh-badge: [star, fork, follow]

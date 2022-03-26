@@ -25,7 +25,7 @@ Current is the measurement of the rate of flow of electrons through a resistance
 
 Resistance is what ties voltage and current together. Resistance is what it sounds like, it resists electricity. The units are Ohms and it is labelled with the greek symbol Omega. One volt across one ohm will result in one amp. This is a seemingly simple but complex relationship. If we look back at the hill analogy, the person carrying the electrons up the hill is equivalent to a battery which adds electrical potential to a system or circuit. The bulb on the down side of the hill is the reistance, the height of the hill is the voltage, and the amount of electrons going through the bulb is the current. 
 
-![Relationship](https://www.build-electronic-circuits.com/wp-content/uploads/2014/09/Ohms-law-cartoon-cropped.jpg){: .mx-auto.d-block :}
+![Relationship](https://www.build-electronic-circuits.com/wp-content/uploads/2014/09/Ohms-law-cartoon-cropped.jpg)
 
 **Bringing it all together** 
 

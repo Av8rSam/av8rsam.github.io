@@ -30,3 +30,4 @@ This is a very powerful equation which will be used across many different applic
 So we know that 
 ![equation5](https://latex.codecogs.com/png.image?\dpi{110}\frac{R_2}{R_1&space;&plus;&space;R_2}&space;=&space;\frac{1}{3})
 And we can use some algebra to see that R1 needs to have twice the resistance of R2. We can then just pick some values, lets say 1k ohms and 2k ohms and take a lead from inbetween these two to our arduino. Now our 0-15v range has been scaled to 0-5v. 
+One last topic to his is the current divider. In parallel, two resistors form a current divider. The current going through R1

@@ -15,4 +15,4 @@ Welcome to one of the longer electrical engineering basics post. In this post, I
 
 Kirchoff's voltage law states that the voltage drops around a loop in a circuit must sum to equal zero. This is like my analogy from the previous post about resisitors, I talked about voltage being a person running an obstacle course. Each time the person does the obstacle course, they are going to use all the energy they have and if there are multiple obstacles, then the person will allocate their energy accordingly. 
 For an example of KVL with resistors look at the below circuit:
-![kvlcircuit](assets\img\KVLcircuitpic.PNG)
+![kvlcircuit](assets/img/KVLcircuitpic.PNG)

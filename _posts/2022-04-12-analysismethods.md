@@ -16,3 +16,12 @@ Welcome to one of the longer electrical engineering basics post. In this post, I
 Kirchoff's voltage law states that the voltage drops around a loop in a circuit must sum to equal zero. This is like my analogy from the previous post about resisitors, I talked about voltage being a person running an obstacle course. Each time the person does the obstacle course, they are going to use all the energy they have and if there are multiple obstacles, then the person will allocate their energy accordingly. 
 For an example of KVL with resistors look at the below circuit:
 ![kvlcircuit](assets/img/KVLcircuitpic.PNG)
+Using voltage divider to solve for the voltage across R1 we of course do 
+![equation1](https://latex.codecogs.com/png.image?\dpi{110}10*\frac{25}{100}&space;=&space;2.5&space;). Now that we know how many volts are across R1, we can use KVL to determine the voltage across R2. We start at the bottom left corner and work our way around the circuit in a clockwise motion. Going into the voltage source, there is a negative sign first so the first term we write down is -10. Then we get to R1, we will make the sign of its voltage drop positive since it has a positive voltage drop across it. So we add to our string +2.5. Finally, we arrive at R2 and since it is another resistor, it will have a positive sign in front.
+Lastly, we end the equation by setting it equal to zero. What we have so far is: 
+![equation2](https://latex.codecogs.com/png.image?\dpi{110}-10&space;&plus;&space;2.5&space;&plus;&space;R_2&space;=&space;0)
+All we have to do is solve for R2, which is going to be 7.5 volts. This is because of KVL which means all of the voltage drops around a circuit sum to zero. More practically, all of the voltage drops across the resistors add to equal the voltage of the battery. 
+
+**Kirchoff's Current Law**
+
+Kirchoff's current law (KCL) states that the current entering a node must equal the current leaving a node. This is easy to see. Imagine a large river splits into two smaller rivers, all the water coming through the larger river must equal the water leaving in the smaller rivers. This is all that KCL is saying and it is a powerful analysis tool. 

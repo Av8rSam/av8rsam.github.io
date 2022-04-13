@@ -28,7 +28,7 @@ All we have to do is solve for R2, which is going to be 7.5 volts. This is becau
 
 Kirchoff's current law (KCL) states that the current entering a node must equal the current leaving a node. This is easy to see. Imagine a large river splits into two smaller rivers, all the water coming through the larger river must equal the water leaving in the smaller rivers. This is all that KCL is saying and it is a powerful analysis tool. Lets look at the next circuit below:
 
-![KCLcircuit](/assets/img/KCLciruitpic.PNG)
+![KCLcircuit](/assets/img/KCLcircuitpic.PNG)
 
 The two resistors on the right can be combined into an equivalent resistance of 100 ohms. Now we have two 100 ohm resistors in parallel as such:
 ![KCLcircuit2](/assets/img/KCLcircuit2pic.PNG)

@@ -34,5 +34,9 @@ The two resistors on the right can be combined into an equivalent resistance of 
 ![KCLcircuit2](/assets/img/KCLcircuit2pic.PNG)
 If we wanted to find the current going through the first 100 ohm resistor we could re-arrange ohms law to get 
 ![equation3](https://latex.codecogs.com/svg.image?I&space;=&space;\frac{V}{R})
-So 10 volts divided by 100 is 0.1 amps. Since the second resistor is also 100 ohms, we can say that the current through that resistor is also 0.1 amps. According to KCL we can say that the total current going into the resistor system is 0.2 amps. We can check that by finding the total equivalent resistance and using ohm's law. So ![equation4](https://latex.codecogs.com/svg.image?\frac{1}{\frac{1}{100}&plus;\frac{1}{100}}&space;=&space;50) 
+So 10 volts divided by 100 ohms is 0.1 amps. Since the second resistor is also 100 ohms, we can say that the current through that resistor is also 0.1 amps. According to KCL we can say that the total current going into the resistor system is 0.2 amps. We can check that by finding the total equivalent resistance and using ohm's law. So ![equation4](https://latex.codecogs.com/svg.image?\frac{1}{\frac{1}{100}&plus;\frac{1}{100}}&space;=&space;50) 
 And 10 volts divided by 50 ohms is 0.2 amps. This checks out and we can see how KCL works. In summary, 0.2 amps goes in and 0.1 amps goes down each branch to each resistor. 
+
+**Node Voltage**
+
+Node voltage is my favorite circuit analysis technique. It is based off of KCL. 

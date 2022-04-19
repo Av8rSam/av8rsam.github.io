@@ -39,4 +39,9 @@ And 10 volts divided by 50 ohms is 0.2 amps. This checks out and we can see how 
 
 **Node Voltage**
 
-Node voltage is my favorite circuit analysis technique. Based off of KCL, we pick a "node" and find the voltage in reference to ground through the understanding that all the current coming in and out of the node is equal to zero. First, lets start by practicing identifying nodes. Nodes connect two components in an electrical circuit. Each node typically had a 
+Node voltage is my favorite circuit analysis technique. Based off of KCL, we pick a "node" and find the voltage in reference to ground through the understanding that all the current coming in and out of the node is equal to zero. First, lets start by practicing identifying nodes. Nodes connect two components in an electrical circuit. Think of them as a piece of wire in a circuit where you can stick the probe from a multimeter and measure voltage. Lets use the below circuit:
+
+![NodeVoltage](/assets/img/NodeExamplePic.PNG)
+
+First, we need to establish a reference or ground node. Typically, we chose the node connected to the negative side of the battery.
+

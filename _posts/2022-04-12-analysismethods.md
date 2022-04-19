@@ -51,3 +51,16 @@ Now that we have a reference node, we can label our other nodes.
 
 ![othernodes](/assets/img/othernodes.jpg)
 
+I labeled them as N1 and N2. Ok, lets use node voltage to analyze these circuits. Rememeber how all the current entering a node has to equal all the current exiting the node? We can apply this to each node to solve for the voltage at that node. Using Ohm's law, we can solve for the currents entering the node. If we assume that all the currents are exiting the node, then one will be "negative" and balance out the "positive" current. Basically, all we need to do is sum all the currents exiting the node and set it equal to zero. Lets just look at one node for now, N1.
+
+![analysisv1](/assets/img/analysisv1.JPG)
+
+We can determine current I1 by finding the voltage across R1. 
+![equation4](https://latex.codecogs.com/png.image?\dpi{110}I_1&space;=&space;\frac{N_1-V_1}{R_1})
+As you can see, the current I1 is equal to the voltage drop across R1 divided by the resistance R1. We can find the currents I2 and I3 the same way. For I2, the voltage drop is the difference between N1 and N2.  
+![equation5](https://latex.codecogs.com/png.image?\dpi{110}I_2&space;=&space;\frac{N_1-N_2}{R_2})
+For I3, the voltage drop is just equal to N1. Thus, 
+![equation6](https://latex.codecogs.com/png.image?\dpi{110}I_3&space;=&space;\frac{N_1}{R_3})
+Now that we have all of our equations for the currents, we can combine them by summing them to equal zero. 
+![equation7](https://latex.codecogs.com/png.image?\dpi{110}\frac{N_1-V_1}{R_1}&plus;\frac{N_1-N_2}{R_2}&plus;\frac{N_1}{R_3}=0)
+This equation would have two unknowns so we need to make a similar equation for N2 now. One key thing to see here is that we subtracted the 

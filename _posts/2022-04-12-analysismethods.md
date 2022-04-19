@@ -43,5 +43,11 @@ Node voltage is my favorite circuit analysis technique. Based off of KCL, we pic
 
 ![NodeVoltage](/assets/img/NodeExamplePic.PNG)
 
-First, we need to establish a reference or ground node. Typically, we chose the node connected to the negative side of the battery.
+First, we need to establish a reference or ground node. Typically, we chose the node connected to the negative side of the battery but a good rule of thumb is to chose a reference node by the node that has the most connections. For this circui, the reference node will be:
+
+![referencenode](/assets/img/groundnode.jpg)
+
+Now that we have a reference node, we can label our other nodes. 
+
+![othernodes](/assets/img/othernodes.jpg)
 

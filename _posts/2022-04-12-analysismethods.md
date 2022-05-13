@@ -128,7 +128,7 @@ The next Special case is the super mesh. Here is an example:
 
 A current source is in between two meshes. We will have to make a super mesh like this:
 
-![smanalysisv1](/assets/img/smanalysis.jpg)
+![smanalysisv1](/assets/img/smanalysisv1.jpg)
 
 Where we will analyze the purple loop as one rather than two. Similarly to supernode analysis, we will solve for the purple loop and then use a connecting equation to solve for each individual loop. Our first equation for the supermesh will look like:
 ![equation18](https://latex.codecogs.com/png.image?\dpi{110}-V_1&plus;R_1(I_x)&plus;R_3(I_Y-I_Z)&plus;R_5(I_Y)&plus;R_4(I_Y)&plus;R_2(I_X)=0)

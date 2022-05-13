@@ -77,7 +77,7 @@ Now, we have two equations and two unknowns. Via some algebra and maybe a comput
 
 Now, I will explain mesh current analysis. Mesh current analysis relies on Kirchoff's Voltage Law (KVL) rather than KCL from nodal analysis. Here is a circuit you can analyze with Mesh Current Analysis:
 
-![meshv1](/assets/img/meshexamplepic.jpg)
+![meshv1](/assets/img/meshexamplepic.PNG)
 
 This circuit is relatively simple for a mesh current analysis example and it could be analyzed with nodal analysis but it is a good way to describe mesh current analysis. You may run into circuits which are very messy and nodal analysis won't work. That's when you'll need to use mesh current analysis. 
 
@@ -106,7 +106,7 @@ There occasionally are a few special cases with these analysis methods which I w
 
 The first is the super node. A super node is when two nodes are connected via a voltage source. Here is an example:
 
-![supernodepic](/assets/img/supernodepic.jpg)
+![supernodepic](/assets/img/supernodepic.PNG)
 
 When you try to do nodal analysis on this circuit you run into a problem because V2 separates two of the nodes. How do we work around this? We turn it into a supernode. I will draw the nodes on the circuit:
 

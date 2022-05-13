@@ -63,4 +63,59 @@ For I3, the voltage drop is just equal to N1. Thus,
 ![equation6](https://latex.codecogs.com/png.image?\dpi{110}I_3&space;=&space;\frac{N_1}{R_3})
 Now that we have all of our equations for the currents, we can combine them by summing them to equal zero. 
 ![equation7](https://latex.codecogs.com/png.image?\dpi{110}\frac{N_1-V_1}{R_1}&plus;\frac{N_1-N_2}{R_2}&plus;\frac{N_1}{R_3}=0)
-This equation would have two unknowns so we need to make a similar equation for N2 now.  
+This equation would have two unknowns so we need to make a similar equation for N2 now. First, draw the current leaving N2:
+
+![analysisv2](/assets/img/analysisv2.jpg)
+
+Now, repeat the process done before. The current I4 is going to be equal to 
+![equation8](https://latex.codecogs.com/png.image?\dpi{110}I_4&space;=&space;\frac{N_2&space;-&space;N_1}{R_2})
+I am going to skip the step by step and list out all of the currents leaving N2 as one equation.
+![equation9](https://latex.codecogs.com/png.image?\dpi{110}\frac{N_2-N_1}{R_2}&plus;\frac{N_2}{R_4}&plus;\frac{N_2}{R_5&plus;R_6}=0)
+Now, we have two equations and two unknowns. Via some algebra and maybe a computer solver we can solve for the voltages at N1 and N2.
+
+**Mesh Current**
+
+Now, I will explain mesh current analysis. Mesh current analysis relies on Kirchoff's Voltage Law (KVL) rather than KCL from nodal analysis. Here is a circuit you can analyze with Mesh Current Analysis:
+
+![meshv1](/assets/img/meshexamplepic.jpg)
+
+This circuit is relatively simple for a mesh current analysis example and it could be analyzed with nodal analysis but it is a good way to describe mesh current analysis. You may run into circuits which are very messy and nodal analysis won't work. That's when you'll need to use mesh current analysis. 
+
+What is a mesh? a mesh is a loop within a circuit. According to KVL, all of the voltages in a loop will sum to zero. We can use this to determine the current in any single loop in a circuit. I will draw the loops in our circuit above:
+
+![meshanalysisv1](/assets/img/meshanalysisv1.jpg)
+
+Beginning in the loop labelled X we will start in the bottom left corner and move clockwise starting at resistor R7. Since we are trying to add up the voltages, we need to find the voltage across R7. The voltage across R7 is equal to 
+![equation10](https://latex.codecogs.com/png.image?\dpi{110}I_x*R_7)
+Which was found using ohm's law. Now, we can write an equation for loop X.
+![equation11](https://latex.codecogs.com/png.image?\dpi{110}I_x(R_7)&plus;I_x(R_8)&plus;R_4(I_x-I_z)&plus;R_1(I_x-I_Y)=0)
+One thing to note here is when a resistor connects two meshes like R4, we multiply the resistance R4 by the net difference between current X and current Y. Always assume the current you are working with is the larger current and subtract the other from it. So for current X, subtract currents z and y rather than subtract current x. Now, for loop Y, the equation will look like:
+![equation12](https://latex.codecogs.com/png.image?\dpi{110}-V_1&plus;R_1(I_Y-I_X)&plus;R_6(I_Y-I_W)=0)
+Here, notice for voltage sources, we just put their voltage value into the circuit. The reason it is negative is because we are going clockwise around the loop and enter its negative terminal first. For loop Z the equation will be:
+![equation13](https://latex.codecogs.com/png.image?\dpi{110}R_4(I_z-I_X)&plus;R_5(I_Z)&plus;R_2(I_Z)&plus;R_3(I_Z-I_W)=0)
+And for loop W the equation will be:
+![equation14](https://latex.codecogs.com/png.image?\dpi{110}R_6(I_W-I_Y)&plus;R_3(I_W-I_Z)&plus;V_3=0)
+Again, there is a voltage source (just noticed it's named V3 even though there are only 2, oops) and this voltage source, when going clockwise, is positive. 
+Now, we have 4 equations and 4 unknowns so we can plug it into a computer to solve or do some algebra. 
+
+What happens when there is a current source in a mesh? Say V1 from the example above was a current source. Current sources make mesh analysis easier! If V1 was a current source, ay I1, it would mean that the loop current IY would be equal to I1. Therefore, everywhere in the equations where you see IY you can replace that with current I1. 
+
+**Special Cases** 
+
+There occasionally are a few special cases with these analysis methods which I will discuss.
+
+The first is the super node. A super node is when two nodes are connected via a voltage source. Here is an example:
+
+![supernodepic](/assets/img/supernodepic.jpg)
+
+When you try to do nodal analysis on this circuit you run into a problem because V2 separates two of the nodes. How do we work around this? We turn it into a supernode. I will draw the nodes on the circuit:
+
+![superanalysisv2](/assets/img/superanalysisv2.jpg)
+
+When making our equations for each node, on the super node labelled NS, we will need to write the equations for N1 and N2 as one. We will, in a sense, be looking at the current leaving the entire super node.
+
+Here's the equation for NS:
+![equation15](https://latex.codecogs.com/png.image?\dpi{110}\frac{N_1-V_1}{R_1}&plus;\frac{N_1}{R_3}&plus;\frac{N_2}{R_4}&plus;\frac{N_2-N_3}{R_6}=0)
+So, we never use the label NS in the equation, we use the individual node labels but the terms for N1 and N2 are in the same equation. Now for N3:
+![equation16](https://latex.codecogs.com/png.image?\dpi{110}\frac{N_3-N_2}{R_6}&plus;\frac{N_3}{R_5}=0)
+

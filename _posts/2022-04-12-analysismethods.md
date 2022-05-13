@@ -116,6 +116,15 @@ When making our equations for each node, on the super node labelled NS, we will 
 
 Here's the equation for NS:
 ![equation15](https://latex.codecogs.com/png.image?\dpi{110}\frac{N_1-V_1}{R_1}&plus;\frac{N_1}{R_3}&plus;\frac{N_2}{R_4}&plus;\frac{N_2-N_3}{R_6}=0)
-So, we never use the label NS in the equation, we use the individual node labels but the terms for N1 and N2 are in the same equation. Now for N3:
+So, we never use the label NS in the equation, we use the individual node labels but the terms for N1 and N2 are in the same equation. Now, for N3:
 ![equation16](https://latex.codecogs.com/png.image?\dpi{110}\frac{N_3-N_2}{R_6}&plus;\frac{N_3}{R_5}=0)
+And after that we have one final equation to connect the supernode. Since V2 separates N1 and N2, we know that those two nodes will have a voltage difference of V2. Therefore we can write the equation: 
+![equation17](https://latex.codecogs.com/png.image?\dpi{110}N_1-N_2=V_2)
+And again with some algebra, we can solve for each voltage.
+
+The next Special case is the super mesh. Here is an example:
+
+![supermeshpic](/assets/img/supermeshpic.PNG)
+
+A current source is in between two meshes. We will have to make a super mesh like this:
 

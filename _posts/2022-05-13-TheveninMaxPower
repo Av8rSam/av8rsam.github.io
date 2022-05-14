@@ -1,0 +1,10 @@
+---
+layout: post
+title: Thevenin Equivalent and Max Power
+date: 2022-04-03
+subtitle: A guide to circuit analysis tools
+gh-repo: Av8rSam/av8rsam.github.io
+gh-badge: [star, fork, follow]
+tags: [Resistors, Kirchoffs voltage law, kirchoffs current law, nodal voltage analysis, mesh current analysis]
+comments: true
+---

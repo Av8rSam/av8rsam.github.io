@@ -1,0 +1,14 @@
+---
+layout: post
+title: Thevenin Equivalent and Max Power
+date: 2022-05-14
+subtitle: Simplifying circuits with matching impedances
+gh-repo: Av8rSam/av8rsam.github.io
+gh-badge: [star, fork, follow]
+tags: [Resistors, nodal voltage analysis, mesh current analysis, Equivalent Resistance, Thevenin, Impedance Matching]
+comments: true
+---
+
+**Thevenin Equivalent**
+
+The thevenin equivalent circuit is a circuit with just a voltage source and a resistor. The resistor is symbolic of a circuit's internal impedance. If the impedance of a power source is known, then the load impedance can be tuned to match for better power transfer. An example of this is when installing speakers and amplifiers. The amplifier might be a 2 or 4 ohm 

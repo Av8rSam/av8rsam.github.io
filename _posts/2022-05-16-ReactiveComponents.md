@@ -21,3 +21,9 @@ Where C is capacitance in Farads, Q is charge in coulombs, and V is volts. The l
 
 **RC Circuits**
 
+When a capacitor and resistor are connected in series, they behave in a way that is related to their capacitance and resistance values. If connected to a battery with an initially uncharged capacitor, the capacitor will charge up at a rate according to the resistance multiplied by the capacitance. 
+
+One thing about capacitors is that they don't change voltage instantaniously. We can use this to analyze RC circuits. 
+1. Step one is to determine the voltage of the capacitor before power is connected or disconnected. Because capacitors can't change instantaneously in voltage, we need to find what they are acting like before a change in the circuit happens. You can find the voltage of the capacitor by removing it from the circuit and finding the open circuit voltage at the terminals.
+2. Step two is to replace the capacitor with a voltage source and connect the power source (or disconnect the power source). Now, solve for the unknown quantity you wish to solve for. Copy this down as ![equation 2](https://latex.codecogs.com/png.image?\dpi{110}X(0^{&plus;})) 
+3. Step three is to analyze the circuit a long time after the power has been connected (or disconnected). Replace the capacitor with an open circuit. Solve for unknown quantity again, labelling it as 

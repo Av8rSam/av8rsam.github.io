@@ -44,4 +44,19 @@ We can replicate these steps for any quantity we wish to know.
 
 **Inductors**
 
-Comprised of a toroid of wire around a ferrite core, inductors 
+Comprised of a toroid of wire around a ferrite core, inductors store electrical energy in the form of magnetic fields and resist change in current. 
+![inductors](/assets/img/inductors.jfif)
+
+**RL Circuits**
+
+RL circuits are comprised of a resistor and an inductor. They can be analyzed similarly to RC circuits.
+
+1. Step One is to replace the inductor with a short circuit and find the current going through the short. Copy this down as ![equation7](https://latex.codecogs.com/png.image?\dpi{110}i_{L}(0^{-})) 
+2. Step two is to now connect (or disconnect) the power source. Replace the inductor with a current source equal to the short circuit current. Solve for the unknown quanitity and copy that down as ![equation8](https://latex.codecogs.com/png.image?\dpi{110}X(0^{&plus;}))
+3. Step three, replace the inductor with a short circuit again and solve for the unknown quanitity. Copy down as ![equation9](https://latex.codecogs.com/png.image?\dpi{110}X(\infty)) 
+4. Step four, remove the inductor, turn off all sources, and find resistance across the inductor terminals. Divide the inductance of the inductor by the resistance and copy that down as ![equation10](https://latex.codecogs.com/png.image?\dpi{110}\tau)
+5. Step five is to plug all of the data into the equation: ![equation11](https://latex.codecogs.com/png.image?\dpi{110}X(t)=X(\infty)&plus;[X(0^{-})-X(\infty)]e^{\frac{-t}{\tau}})
+
+Inductors are very cool components. Because they cannot change in current instantaniously, if you have an inductor with a current flowing through it and you open the switch, the current will theoretically stop instantly. Since this goes against the rules of inductors, the voltage will spike very very high until the air in between the switch breaks down and a spark forms. 
+We can prevent sparks like this with a diode like so:
+

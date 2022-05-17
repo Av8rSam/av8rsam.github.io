@@ -59,4 +59,4 @@ RL circuits are comprised of a resistor and an inductor. They can be analyzed si
 
 Inductors are very cool components. Because they cannot change in current instantaniously, if you have an inductor with a current flowing through it and you open the switch, the current will theoretically stop instantly. Since this goes against the rules of inductors, the voltage will spike very very high until the air in between the switch breaks down and a spark forms. 
 We can prevent sparks like this with a diode like so:
-
+![Lprotect](/assets/img/inductorprotectionpic.PNG)

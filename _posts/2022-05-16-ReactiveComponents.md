@@ -41,3 +41,7 @@ Which when we graph, we get something that looks like:
 ![RCgraph](/assets/img/RCgraph.PNG)
 
 We can replicate these steps for any quantity we wish to know. 
+
+**Inductors**
+
+Comprised of a toroid of wire around a ferrite core, inductors 

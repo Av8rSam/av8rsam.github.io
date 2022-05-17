@@ -29,3 +29,15 @@ One thing about capacitors is that they don't change voltage instantaniously. We
 3. Step three is to analyze the circuit a long time after the power has been connected (or disconnected). Replace the capacitor with an open circuit. Solve for unknown quantity again, labelling it as ![equation3](https://latex.codecogs.com/png.image?\dpi{110}X(\infty)) 
 4. Step Four is to turn off all sources, remove the capacitor, and find the resistance across the terminals. Copy this down as "R". Now, multiply "R" by the capacitor's capacitance. Write that down as ![equation5](https://latex.codecogs.com/png.image?\dpi{110}\tau)
 5. Step five is to plug everything into the equation: ![equation4](https://latex.codecogs.com/png.image?\dpi{110}X(t)=X(\infty)&plus;[X(0^{-})-X(\infty)]e^{\frac{-t}{\tau}}) 
+
+Here's an example:
+![RCsolve](/assets/img/RCsolve.jpg)
+We will say that the switch will close at t=0. So, first step, determine voltage of the capacitor before the switch is moved. This is 0 volts. 
+Step two is to replace the capacitor with a voltage source equal to zero volts. This will be a straight wire. For our unknown quantity, which is the voltage across the capacitor, the voltage will be zero. 
+Step three is to replace the capacitor with an open circuit and solve for the voltage across. This will be 10 volts.
+Step four is to find resistance across the capacitor terminals after turning eveything off. This is 100 ohms. Multiplying 100 by 0.05 we get 5. So the time constant for this circuit is 5 seconds. 
+Step five, we get the equation: ![equation6](https://latex.codecogs.com/png.image?\dpi{110}V_{c}(t)=10-10e^{\frac{-t}{5}}) 
+Which when we graph, we get something that looks like:
+![RCgraph](/assets/img/RCgraph.PNG)
+
+We can replicate these steps for any quantity we wish to know. 

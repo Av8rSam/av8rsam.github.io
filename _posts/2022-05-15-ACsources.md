@@ -38,6 +38,6 @@ To convert from cosine waves to sine waves, use the following:
 There are some AC Sources which will be labelled as RMS or "Root Mean Square." Since an AC source is alternating, the average of it would be zero. Obviously, the source is not equal to zero. In order to find the average then, an integral was used and the signal was squared, then the average was found, then the root was found. Squaring makes the negative peaks positive which allows for a non-zero mean to be found. Luckily, we don't need to find the integral of every AC source we come across. If we simplify the integral, it comes out to be:
 ![equation7](https://latex.codecogs.com/png.image?\dpi{110}V_{rms}=\frac{V_{peak}}{\sqrt{2}})
 
-Back to the American home. 170 divided by the square root of 2 is 120. Therefore, you typically hear the voltage of a home as 120 Volts RMS. The RMS value is the equivalent DC value of the sine wave. Therefore, if you had 120 volts DC, you would need 170 volts AC to have the same average value.
+Back to the American home. 170 divided by the square root of 2 is 120. Therefore, you typically hear the voltage of a home as 120 Volts RMS. The RMS value is the equivalent DC value of the sine wave. Therefore, if you had 120 volts DC, you would need 170 volts AC to have the same average value. Additionally, the RMS value is what your multimeter will read.
 
 A cosine or sine function will never have an RMS value in front of it. It is an equation of the wave and therefore will have the peak value. 
